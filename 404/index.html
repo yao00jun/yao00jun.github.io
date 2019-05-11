@@ -64,9 +64,6 @@
 
 
 
-  <meta property="fb:admins" content="yao00jun">
-  <meta property="fb:app_id" content="2341333712627641">
-
 
 
 <script id="hexo.configurations">
@@ -127,23 +124,6 @@
 
   <title>404 | 晓风庭</title>
   
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId  : '2341333712627641',
-        xfbml  : true,
-        version: 'v2.10'
-      });
-    };
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/zh_CN/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
 
 
 
@@ -494,8 +474,6 @@
 
   
     <div class="comments" id="comments">
-      <div class="fb-comments" data-href="http://www.yao00jun.cn/404/index.html" data-numposts="10" data-width="100%" data-colorscheme="light">
-      </div>
     </div>
 
   
@@ -760,6 +738,36 @@
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: '9H2lLmG7YpG3M4wV5foq0Dx3-gzGzoHsz',
+    appKey: 'kE6LoSOomj6MuqFt5YYlcnEa',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script>
+
+
 
 
   
